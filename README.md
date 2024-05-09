@@ -10,5 +10,6 @@ Images are displayed in the list view and in its detail view. *Optional Challang
 
    *Optional Challange:
    Besides solving the above, if you think you can challange yourself by building a new scratch flutter mobile app
-   wbase off this article using its table of content to build the listview and its content images both see in the list view and detail view
+   Base off this article using its table of content to build the listview and its content images both see in the list view and detail view.
+   You should Scape data on the site from table of content as the Listview items and for the detail page parse the data base of the content segment with the images.
    Here is the the Challange URL https://garagedreams.net/buyers-guide/first-gen-mini-r50-r52-r53-buyers-guide
