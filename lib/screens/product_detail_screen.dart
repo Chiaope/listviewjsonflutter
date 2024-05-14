@@ -62,6 +62,10 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                               fontWeight: FontWeight.bold,
                               fontSize: 20.0))
                   ),
+                  Container(
+                      margin: EdgeInsets.all(5.0),
+                      child: Image.network(product!.image.toString())
+                  ),
                   SizedBox(height: 25,),
           Flexible(
                   child: Flexible(
