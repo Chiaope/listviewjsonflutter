@@ -63,7 +63,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                               fontSize: 20.0))
                   ),
                   SizedBox(height: 25,),
-          Container(width:400,height: 680,
+          Flexible(
                   child: Flexible(
                       child: ScrollableTextIndicator(
                         text: Text("" + (product!.description.toString()),

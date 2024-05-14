@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:http/http.dart' as http;
+
 import 'package:listview_json_parse_demo/models/product.dart';
 import 'dart:convert';
 
@@ -20,8 +21,10 @@ class _ProductListScreenState extends State<ProductListScreen> {
   List<Product> filteredProducts = [];
 
   Future<void> readJsonFile() async {
+    const url ="https://api.jsonserve.com/i3FmS9";
+    final httpResp = await http.get(Uri.parse(url));
+    final String response = httpResp.body;
 
-    final String response = await rootBundle.loadString('assets/product.json');
     final productData = await json.decode(response);
 
     var list = productData["items"] as List<dynamic>;
@@ -83,9 +86,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                   
                   ),
     
-                  
                   Expanded(
-                   
                       child: ListView.builder(
                         shrinkWrap: true,
                         itemCount: filteredProducts.length,
